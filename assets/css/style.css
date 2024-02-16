@@ -2,7 +2,7 @@
 /*-----------------------------------------------------------------------------------
 
     Template Name: Coloxa
-    Template Description: Coloxa - Pregnancy Care Medical Bootstrap 5 Template
+    Template Description: Komunitas profesi bidan 2024 polkesta
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -4938,6 +4938,9 @@ input {
 .header-nav > li > a:hover {
   color: #ffb40c;
 }
+.header-nav > li > a.active {
+  color: #ffb40c;
+}
 .header-nav .has-dropdown {
   position: relative;
 }
@@ -5643,4 +5646,8 @@ input {
   background-image: url(../images/icons/top-arrow.svg);
   background-position: center 50%;
   background-repeat: no-repeat;
+}
+
+.indent-paragraph {
+  text-indent: 2em;
 }
