@@ -118,8 +118,8 @@
    *   Dortor Team Slider Active
    **********************************************/
   var doctorTeamSlider = new Swiper('.doctors-team-slider .swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 40,
+    slidesPerView: 5,
+    spaceBetween: 20,
     speed: 1500,
     loop: true,
     navigation: {
