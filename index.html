@@ -37,6 +37,7 @@
 
   gtag('config', 'G-G4BV2F1CPG');
 </script>
+
 </head>
 
 <body>
@@ -403,8 +404,27 @@
         <div class="footer-top-shape">
           <img class="img-width" src="/../assets/images/background/footer-shape-bg.png" alt="">
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-5">
+                <!-- Start Footer Widget -->
+                <div class="footer-top-single-item footer-menu footer-widget">
+                  <!-- <h4 class="title" style="text-align: center;">Pengunjung</h4> -->
+                  <ul class="footer-nav" style="color: white; text-align: center;">
+                    <li><h2>Visitor</h2></li>
+                    <li id="visitorWidget">
+                      <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=72d939fc019d072175270da2eec989a5d9fdd20c'></script>
+                      <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1152043/t/1"></script>
+                    </li>                 
+                  </ul>
+                </div>
+                <!-- End Footer Widget -->
+            </div>
+          </div>
+        </div>
       </div>
       <!-- End Footer Top Area -->
+      
 
       <!-- Start Footer BottomArea -->
       <div class="footer-bottom-area">
@@ -450,7 +470,25 @@
 
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener("load", function() {
+            // Your function to execute after the entire page has finished loading
+            changeUrl();
+        });
 
+        function changeUrl() {
+            console.log("Page has finished loading.");
+            // Get the parent element by its ID
+            var parentElement = document.getElementById('visitorWidget');
+
+            // Find the anchor element within the parent element
+            var linkElement = parentElement.querySelector('a');
+
+            // Change the href attribute value
+            linkElement.href = '#';
+            linkElement.removeAttribute('target');
+        }
+  </script>
 </body>
 
 </html>
